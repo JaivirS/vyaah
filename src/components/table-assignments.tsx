@@ -98,7 +98,7 @@ export function TableAssignments({ initialAssignments }: TableAssignmentsProps) 
               borderRadius: "9999px",
               fontSize: "1.125rem",
               lineHeight: "1.75rem",
-              fontFamily: "var(--font-playfair)",
+              fontFamily: "var(--font-playfair), serif",
               boxShadow: "0 0 15px rgba(236, 72, 153, 0.5)",
             }}
           />
@@ -109,7 +109,7 @@ export function TableAssignments({ initialAssignments }: TableAssignmentsProps) 
         <div style={{ textAlign: "center", padding: "3rem 0" }}>
           <p
             style={{
-              fontFamily: "var(--font-playfair)",
+              fontFamily: "var(--font-playfair), serif",
               fontSize: "1.25rem",
               lineHeight: "1.75rem",
               fontStyle: "italic",
@@ -146,7 +146,7 @@ export function TableAssignments({ initialAssignments }: TableAssignmentsProps) 
             >
               <div
                 style={{
-                  padding: "1.25rem 1.5rem",
+                  padding: "0.5rem 1.5rem",
                   borderBottom: "1px solid rgba(236, 72, 153, 0.3)",
                   position: "relative",
                   background:
@@ -180,9 +180,9 @@ export function TableAssignments({ initialAssignments }: TableAssignmentsProps) 
 
                 <h2
                   style={{
-                    fontFamily: "var(--font-playfair)",
+                    fontFamily: "var(--font-playfair), serif",
                     fontSize: "1.5rem",
-                    lineHeight: "2rem",
+                    lineHeight: "1.5rem",
                     fontWeight: "700",
                     textAlign: "center",
                     position: "relative",
@@ -197,7 +197,7 @@ export function TableAssignments({ initialAssignments }: TableAssignmentsProps) 
                 </h2>
               </div>
               <CardContent style={{ padding: "0" }}>
-                <ul style={{ borderColor: "rgba(236, 72, 153, 0.2)" }}>
+                <ul style={{ borderColor: "rgba(236, 72, 153, 0.2)", margin: 0, padding: 0, listStyle: "none" }}>
                   {groupedByTable[tableNumber]
                     .sort((a, b) => a.name.localeCompare(b.name))
                     .map((assignment, index) => (
@@ -205,7 +205,7 @@ export function TableAssignments({ initialAssignments }: TableAssignmentsProps) 
                         key={index}
                         style={{
                           padding: "1.25rem 1.5rem",
-                          fontFamily: "var(--font-playfair)",
+                          fontFamily: "var(--font-playfair), serif",
                           fontSize: "1.125rem",
                           lineHeight: "1.75rem",
                           position: "relative",

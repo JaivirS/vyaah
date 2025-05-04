@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reset styles to remove any default margins/borders */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Font definitions */
+.font-playfair {
+  font-family: var(--font-playfair), serif;
+}
+
+.font-dancing-script {
+  font-family: var(--font-dancing-script), cursive;
+}
+
 /* Add subtle animation for sparkle effect */
 @keyframes sparkle {
   0%,

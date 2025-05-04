@@ -38,7 +38,16 @@ export default async function Page() {
   }
 
   return (
-    <main style={{ minHeight: "100vh", backgroundColor: "black" }}>
+    <main
+      style={{
+        minHeight: "100vh",
+        backgroundColor: "black",
+        margin: 0,
+        padding: 0,
+        width: "100%",
+        overflow: "hidden",
+      }}
+    >
       {/* Decorative elements */}
       <div
         style={{
@@ -161,7 +170,7 @@ export default async function Page() {
 
             <h2
               style={{
-                fontFamily: "var(--font-dancing-script)",
+                fontFamily: "var(--font-dancing-script), cursive",
                 fontSize: "3rem",
                 lineHeight: "1",
                 marginBottom: "0.5rem",
@@ -174,7 +183,7 @@ export default async function Page() {
 
             <h1
               style={{
-                fontFamily: "var(--font-playfair)",
+                fontFamily: "var(--font-playfair), serif",
                 fontSize: "4rem",
                 lineHeight: "1",
                 fontWeight: "900",
@@ -205,7 +214,7 @@ export default async function Page() {
               style={{
                 maxWidth: "36rem",
                 margin: "0 auto",
-                fontFamily: "var(--font-playfair)",
+                fontFamily: "var(--font-playfair), serif",
                 fontSize: "1.25rem",
                 lineHeight: "1.75rem",
                 fontStyle: "italic",
@@ -224,7 +233,7 @@ export default async function Page() {
               marginTop: "5rem",
               position: "relative",
               color: "#fce7f3",
-              fontFamily: "var(--font-playfair)",
+              fontFamily: "var(--font-playfair), serif",
             }}
           >
             <div style={{ display: "flex", justifyContent: "center", marginBottom: "1.5rem" }}>
@@ -239,7 +248,7 @@ export default async function Page() {
             <p>With eternal love,</p>
             <p
               style={{
-                fontFamily: "var(--font-dancing-script)",
+                fontFamily: "var(--font-dancing-script), cursive",
                 fontSize: "2.5rem",
                 lineHeight: "1",
                 marginTop: "0.75rem",
