@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add subtle animation for sparkle effect */
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.sparkle {
+  animation: sparkle 3s ease-in-out infinite;
+}
