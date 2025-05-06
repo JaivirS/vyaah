@@ -116,7 +116,7 @@ export function TableAssignments({ initialAssignments }: TableAssignmentsProps) 
               color: "#fbcfe8",
             }}
           >
-            No matches found for "{searchQuery}"
+            No matches found for "{searchQuery}", please contact Jaivir Singh 
           </p>
         </div>
       ) : (
